@@ -1,0 +1,3 @@
+NAME: ScanNet
+N_POINTS: 2048
+DATASET_PATH: ../dataset/scannet/npy_cb/%s/%s/

@@ -1,0 +1,54 @@
+optimizer : {
+  type: AdamW,
+  kwargs: {
+  lr : 0.0001,
+  weight_decay : 0.0001
+}}
+
+scheduler: {
+  type: LambdaLR,
+  kwargs: {
+  decay_step: 60,
+  lr_decay: 0.9,
+  lowest_decay: 0.02  # min lr = lowest_decay * lr
+}}
+
+bnmscheduler: {
+  type: Lambda,
+  kwargs: {
+  decay_step: 21,
+  bn_decay: 0.5,
+  bn_momentum: 0.9,
+  lowest_decay: 0.01
+}}
+
+dataset : {
+  train : { _base_: cfgs/dataset_configs/PCNComplete.yaml,
+            others: {subset: 'train', categories: ['table']}},
+  val : { _base_: cfgs/dataset_configs/PCN.yaml,
+            others: {subset: 'test', categories: ['table']}},
+  test : { _base_: cfgs/dataset_configs/PCN.yaml,
+            others: {subset: 'test', categories: ['table']}}}
+
+model : {
+  NAME: P2C,
+  num_group: 64,
+  group_size: 32,
+  mask_ratio: [10, 50, 4],
+  feat_dim: 1024,
+  n_points: 2048,
+  shape_recon_weight: 1000,
+  shape_matching_weight: 1000,
+  latent_weight: 100,
+  nbr_ratio: 2.0,
+  support: 24,
+  neighborhood_size: 32,
+  manifold_weight: 0
+  }
+
+
+total_bs : 32
+step_per_update : 1
+max_epoch : 200
+
+consider_metric: CDL2
