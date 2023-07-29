@@ -1,5 +1,12 @@
 # P2C: Self-Supervised Point Cloud Completion from Single Partial Clouds
 
+<p align="center">
+  <img src="docs/pipeline.png" width="95%">
+</p>
+
+This is the official implementation of "P2C: Self-Supervised Point Cloud Completion from Single Partial Clouds" (ICCV 2023).
+[ArXIv](https://arxiv.org/abs/2307.14726)
+
 more instructions coming soon
 
 Run experiments
