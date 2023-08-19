@@ -15,7 +15,8 @@ Run experiments
 python main.py --config ./cfgs/EPN3D_models/P2C.yaml --exp_name your_exp_name
 ```
 
-Datasets: [[3DEPN]](https://anu365-my.sharepoint.com/:u:/g/personal/u6919043_anu_edu_au/EaPrKMDClTdMgsHgpTUiDagBodq9A35Q0RCddso73TdCqQ?e=cbWvgE)
+Datasets: 
++ 3DEPN [[GoogleDrive]](https://drive.google.com/file/d/1-oA4pYO7fidspqtF822kCpbXBs-SlFMC/view?usp=sharing); [[BaiduYun]](https://pan.baidu.com/s/1AIAP3V7B-cEEglSWp0oPxg) (9pc1)
 
 ## Acknowledgements
 
