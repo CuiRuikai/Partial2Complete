@@ -54,8 +54,8 @@ python main.py --config ./cfgs/EPN3D_models/P2C.yaml --exp_name your_exp_name
 ## pre-trained models
 
 We provide pre-trained models on the 3D-EPN dataset
- [[`Google Drive`](https://drive.google.com/file/d/1Cj2E2bhx7WsKxg1FMBysJajt4xIL8PD4/view?usp=sharing)] [[`BaiduYun coming soon`](#comingsoon)]
-<!-- We provide pre-trained models on the 3D-EPN dataset [[`Google Drive`](https://drive.google.com/file/d/1Cj2E2bhx7WsKxg1FMBysJajt4xIL8PD4/view?usp=sharing)] [[`WeiYun`](https://share.weiyun.com/2th1qD9z) [[`BaiduYun`]()] -->
+ [[`Google Drive`](https://drive.google.com/file/d/1Cj2E2bhx7WsKxg1FMBysJajt4xIL8PD4/view?usp=sharing)] [[`WeiYun`](https://share.weiyun.com/2th1qD9z)] [[`BaiduYun coming soon`](#comingsoon)]
+<!-- We provide pre-trained models on the 3D-EPN dataset [[`Google Drive`](https://drive.google.com/file/d/1Cj2E2bhx7WsKxg1FMBysJajt4xIL8PD4/view?usp=sharing)]  -->
 
 ## Evaluation
 To evaluate a pre-trained P2C model on a dataset with single GPU, run:
