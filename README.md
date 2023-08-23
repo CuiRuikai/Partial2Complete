@@ -1,6 +1,3 @@
-## Acknowledgements
-
-Our code is inspired by [PoinTr](https://github.com/yuxumin/PoinTr)
 # P2C: Self-Supervised Point Cloud Completion from Single Partial Clouds<br><sub><sub>Official PyTorch implementation of the ICCV 2023 paper</sub></sub>
 [[`arXiv`](https://arxiv.org/abs/2307.14726)]
 [[`BibTex`](#citation)]
@@ -38,45 +35,11 @@ pip install -r requirements.txt
 Some packages are needed to train and evaluate the model.
 - Pytorch Chamfer Distance
 - pointops_cuda
+
 To build this, run the command below:
 ```
 bash install.sh
 ```
-
-
-## Preparing the Data
-
-We follow the instructions from [AutoSDF](https://github.com/yccyenchicheng/AutoSDF) to preprocess data.
-
-1. 3D-EPN dataset [[`Google Drive`](https://drive.google.com/file/d/1-oA4pYO7fidspqtF822kCpbXBs-SlFMC/view?usp=sharing)] [[`BaiduYun`](https://pan.baidu.com/s/1AIAP3V7B-cEEglSWp0oPxg)] (9pc1)
-
-Please download the dataset to `./data/EPN3D/`
-
-2. PCN dataset [[`Infinite Gateway`](https://gateway.infinitescript.com/s/ShapeNetCompletion)] [[`BaiduYun`](https://pan.baidu.com/share/init?surl=Oj-2F_eHMopLF2CWnd8T3A)] (hg24)
-
-3. ScanNet dataset  The dataset should be download from the official [website](http://www.scan-net.org/). We will release instruction for data preparation soon!
-
-**The layout should look like this**
-```
-├── cfgs
-├── data [This is your dataroot]
-│   ├── shapenet_synset_dict.json
-│   ├── EPN3D
-│   │   ├── category.txt
-│   │   ├── EPN3D.json
-│   │   ├── cabinet
-│   │   │   ├── complete
-│   │   │   │   ├── 1a1b62a38b2584874c62bee40dcdc539.npy
-│   │   │   │   ├── ......
-│   │   │   ├── partial
-│   │   │   │   ├── 1a1b62a38b2584874c62bee40dcdc539__0__.npy
-│   │   │   │   ├── ......
-│   │   ├── car
-│   │   ├── ......
-│   ├── PCN
-│   ├── ScanNet
-```
-
 
 ## Training
 To train a point cloud completion model from scratch, run:
@@ -116,4 +79,4 @@ If you find our work useful to your research, please consider citing:
 ```
 
 ## Acknowledgement
-This code borrowed heavily from [PoinTr](https://github.com/yuxumin/PoinTr).Thanks for their great work!
+This code borrowed heavily from [PoinTr](https://github.com/yuxumin/PoinTr). Thanks for their great work!
