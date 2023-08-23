@@ -2,13 +2,14 @@
 [[`arXiv`](https://arxiv.org/abs/2307.14726)]
 [[`BibTex`](#citation)]
 
+![Framework image](./assets/pipeline.png)
 
 ## Introduction
 [**P2C: Self-Supervised Point Cloud Completion from Single Partial Clouds**](https://arxiv.org/abs/2307.14726)<br>
 Ruikai Cui, Shi Qiu, Saeed Anward, Jiawei Liu, Chaoyue Xing, Jing Zhang, Nick Barnes
 
 **[abstract]** *Point cloud completion aims to recover the complete shape based on a partial observation. Existing methods require either complete point clouds or multiple partial observations of the same object for learning. In contrast to previous approaches, we present Partial2Complete (P2C), the first self-supervised framework that completes point cloud objects using training samples consisting of only a single incomplete point cloud per object. Specifically, our framework groups incomplete point clouds into local patches as input and predicts masked patches by learning prior information from different partial objects. We also propose Region-Aware Chamfer Distance to regularize shape mismatch without limiting completion capability, and devise the Normal Consistency Constraint to incorporate a local planarity assumption, encouraging the recovered shape surface to be continuous and complete. In this way, P2C no longer needs multiple observations or complete point clouds as ground truth. Instead, structural cues are learned from a category-specific dataset to complete partial point clouds of objects. We demonstrate the effectiveness of our approach on both synthetic ShapeNet data and real-world ScanNet data, showing that P2C produces comparable results to methods trained with complete shapes, and outperforms methods learned with multiple partial observations.*
-![Framework image](./assets/pipeline.png)
+
 
 
 ## Installation
