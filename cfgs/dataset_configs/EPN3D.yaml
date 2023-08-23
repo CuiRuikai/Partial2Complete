@@ -1,5 +1,5 @@
 NAME: EPN3D
 N_POINTS: 2048
 CATEGORY_FILE_PATH: ./data/EPN3D/EPN3D.json
-PARTIAL_POINTS_PATH: ../dataset/EPN3D/%s/partial/%s.npy
-COMPLETE_POINTS_PATH: ../dataset/EPN3D/%s/complete/%s.npy
+PARTIAL_POINTS_PATH: ./data/EPN3D/%s/partial/%s.npy
+COMPLETE_POINTS_PATH: ./data/EPN3D/%s/complete/%s.npy
