@@ -1,6 +1,7 @@
 # P2C: Self-Supervised Point Cloud Completion from Single Partial Clouds<br><sub><sub>Official PyTorch implementation of the ICCV 2023 paper</sub></sub>
 [[`arXiv`](https://arxiv.org/abs/2307.14726)]
 [[`BibTex`](#citation)]
+[[`Poster`](./assets/ICCV_Poster.pdf)]
 
 ![Framework image](./assets/pipeline.png)
 
