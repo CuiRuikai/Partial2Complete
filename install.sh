@@ -1,27 +1,24 @@
 #!/usr/bin/env sh
+
+# Usage:
+#   bash install.sh          - Install packages with --user flag (in user's home directory)
+#   bash install.sh --global - Install packages globally (may require root privileges, depending on the python interpreter used)
+
 HOME=`pwd`
 
-# Check if CUDA is available
-if python -c "import torch; print(torch.cuda.is_available())" | grep -q True; then
-    echo "CUDA detected, forcing CUDA build for both extensions..."
-    USE_CUDA=1
+# Parse command-line arguments
+USE_USER_FLAG="--user"
+if [ "$1" = "--global" ]; then
+    USE_USER_FLAG=""
+    echo "Installing globally."
 else
-    echo "No CUDA detected, proceeding with standard build..."
-    USE_CUDA=0
+    echo "Installing with --user flag in user's home directory."
 fi
 
 # Chamfer Distance
 cd $HOME/extensions/chamfer_dist
-if [ "$USE_CUDA" = "1" ]; then
-    FORCE_CUDA=1 python setup.py install --user
-else
-    python setup.py install --user
-fi
+python setup.py install $USE_USER_FLAG
 
 # PointOps
 cd $HOME/extensions/pointops
-if [ "$USE_CUDA" = "1" ]; then
-    FORCE_CUDA=1 python setup.py install --user
-else
-    python setup.py install --user
-fi
+python setup.py install $USE_USER_FLAG
