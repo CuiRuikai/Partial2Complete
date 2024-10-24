@@ -45,6 +45,12 @@ To build this, run the command below:
 bash install.sh
 ```
 
+By default, this script uses the `--user` option, which installs packages in your home directory. However, this approach can sometimes cause a `ModuleNotFoundError` when using a `conda` environment. If you encounter this issue, reinstall the packages using the `--global` option:
+```
+bash install.sh --global
+```
+This command will install the extensions in your conda environment location instead of your home directory, preventing the error.
+
 ## Preparing the Data
 
 
