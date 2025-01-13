@@ -60,7 +60,7 @@ Please download the dataset to `./data/EPN3D/`
 
 2. PCN dataset [[`Infinite Gateway`](https://gateway.infinitescript.com/s/ShapeNetCompletion)] [[`BaiduYun`](https://pan.baidu.com/share/init?surl=Oj-2F_eHMopLF2CWnd8T3A)] (hg24)
 
-3. ScanNet dataset  The dataset should be download from the official [website](http://www.scan-net.org/). Our preprocessed data is aviliable at [[`Google Drive`]([https://drive.google.com/file/d/1-oA4pYO7fidspqtF822kCpbXBs-SlFMC/view?usp=sharing](https://drive.google.com/file/d/1H25gO49Vc3NmjTKLOLRfTvxRCpCUgx-7/view?usp=sharing))]. 
+3. ScanNet dataset  The original dataset should be download from the official [website](http://www.scan-net.org/). Our preprocessed data is aviliable at [[`Google Drive`](https://drive.google.com/file/d/1H25gO49Vc3NmjTKLOLRfTvxRCpCUgx-7/view?usp=sharing)]. 
 
 **The layout should look like this**
 ```
