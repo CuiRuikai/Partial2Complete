@@ -103,7 +103,8 @@ python main.py --test --save_pred --config ./path_to_config_file/config.yaml --c
 ```
 where `--save_pred` specifics whether save prediction results.
 
-
+### Render
+To produce point cloud render results like visuals in our paper, please use the render in `misc/render.py`
 
 ## <a name="citation"></a>Citing P2C
 
